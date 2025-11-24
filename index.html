@@ -1,229 +1,289 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estatery - Real Estate Platform</title>
+  <title>Real Estet Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="icon" href="./images/house-1.jpg">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">🏤 Estatery</div>
-    <nav>
-      <ul>
-        <li><a href="#">Rent</a></li>
-        <li><a href="#">Buy</a></li>
-        <li><a href="#">Sell</a></li>
-        <li><a href="#">Manage Property</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-    </nav>
-    <div class="buttons">
-      <button class="login">Login</button>
-      <button class="signup">Sign up</button>
+ </head>
+
+ <body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><i class="fa-regular fa-house"></i>Estatery</div>
+
+      <nav class="nav">
+        <a href="#">Rent</a>
+        <a href="#">Bye</a>
+        <a href="#">Sell</a>
+        <a href="#">Manage Property</a>
+        <a href="#">Resources</a>
+      </nav> 
+      <section class="button">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+      </section>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Buy, rent, or sell your property easily</h1>
-      <p>A great platform to buy, sell, or even rent your properties without any commissions.</p>
+  
+   <main>
+    <!-- left site-->
+   <div class="hero">
 
-      <div class="tabs">
-        <button class="active">Rent</button>
-        <button>Buy</button>
-        <button>Sell</button>
-      </div>
-
-      <div class="search-box">
-        <div class="field">
-          <label>Location</label>
-          <p>Barcelona, Spain</p>
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <h1>Buy, rent, or sell your property easily</h1>
+        <p class="sub">
+            A great platform to buy, sell or even rent your properties without any commisions.
+        </p>
+        <div class="tabs">
+            <button class="active">Rent</button>
+            <button>Buy</button>
+            <button>Sell</button>
         </div>
-        <div class="field">
-          <label>When</label>
-          <p>Select Move-in Date</p>
+        <div class="search-box">
+            <div class="field">
+                <label>Location</label>
+                <input type="text" placeholder="Search location">
+            </div>
+            <div class="field">
+                <label>Move-in date</label>
+                <input type="date">
+            </div>
+            <button class="btn">Search</button>
         </div>
-        <button class="browse-btn">Browse Properties</button>
-      </div>
-
-      <div class="stats">
-        <div>
-          <h3>50k+ renters</h3>
-          <p>believe in our service</p>
-        </div>
-        <div>
-          <h3>10k+ properties</h3>
-          <p>house ready for occupancy</p>
-        </div>
-      </div>
     </div>
 
-    <div class="hero-image">
-      <img src="real es.png" alt="House Image">
-      <div class="card">
-        <h4>Manuel Villa</h4>
-        <p>Renter • Moved with Estatery</p>
-        <p>❤️ I loved how smooth the move was, and finally got the house we wanted.</p>
-        <div class="card-bottom">
-          <span>$1,500 saved</span>
-          <span>−24 hrs process time</span>
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <!-- Big Hero Image -->
+        <div class="hero-img">
+            <img src="./images/house-5.jpg" alt="">
         </div>
-      </div> 
-      <div class="star">
-        <div class=excellent">
-    <h2>Excellent</h2>
-    <p>⭐⭐⭐⭐⭐</p> 
-    <p>From 3,264 reviews</p>
-  </div>
-  <div class="Trustpilot">
-    <p>✨Trustpilot</p>
-  </div>
-    </div>
-    </div>
-    </section>
 
-    <main class="contaner">
-      <div class="content">
-        <h2>The new way to find your new Home</h2>
-        <p>Find your dream pllace to live in with more than 10k+ propertlles listed</p>
-        <button class="button">Browse Propertles</button>
-        <img src="house.png" alt="house photos">
-      </div>
+        <!-- Floating Card -->
+        <div class="float-card">
+            <div class="user">
+                <img src="./images/house-3.jpg">
+                <div>
+                    <h4>Manuel Villa</h4>
+                    <p>Renter • Moved with Estately</p>
+                </div>
+            </div>
 
-      <section class="slider">
-        <div class="box">
-          <div class="icon">🏡</div>
-          <h2>Property Insurance</h2>
+            <p class="review">
+                "I loved how smooth the move was, and finally got the house we wanted."
+            </p>
+
+            <div class="line"><b>$1,500</b> <span>Saved up to</span></div>
+            <div class="line"><b>$120</b> <span>Process time</span></div>
+        </div>
+
+        <!-- Trust Card -->
+        <div class="trust">
+            <h4>Excellent ⭐⭐⭐⭐⭐</h4>
+            <p>From 3,264 reviews</p>
+        </div>
+
+    </div>
+
+</div>
+
+   <!-- next hero-->
+    <section class="hero-next">
+      <div class="container">
+        <div class="card">
+    <h2>The new way to find your new home</h2>
+    <p>Find your dream place to live in with more than 10k+ properties listed.</p>
+
+    <button class="btn">
+        Browse Properties
+        <span class="circle"></span>
+    </button>
+
+    <img src="./images/house-2.jpg" class="illustration" alt="House Image">
+</div>
+
+        <div class="work">
+          <div class="work-frist">
+           <i class="fa-regular fa-house"> <h2>Property Insurance</h2></i>
           <p>We offer our customer property protection of liability coverage and insurance for their better life.</p>
-        </div>
+          </div>
 
-        <div class="box">
-          <div class="icon">$</div>
-          <h2>Best Price</h2>
+          <div class="work-frist">
+           <i class="fa-solid fa-dollar-sign"><h2>Best Price</h2></i>
           <p>Not sure what  you should be charging for your property? No need to worry, let us do the numbers for you.</p>
         </div>
 
-        <div class="box">
-          <div class="icon">※</div>
-          <h2>Lowest Commission</h2>
-          <p>You no longer have to negotiate commissions and haggle with other agents it only cost 2%!</p>
-        </div>
+          <div class="work-frist">
+           <i class="fa-solid fa-divide"><h2>Lowest Commission</h2></i>
+           <p>You no longer have to negotiate commissions and haggle with other agents it only cost 2%!</p>
+          </div>
 
-        <div class="box">
-          <div class="icon">₩</div>
-          <h2>Overall Control</h2>
+          <div class="work-frist">
+            <i class="fa-solid fa-location-crosshairs"><h2>Overall Control</h2></i>
           <p>Get a virtual tour, and schedule visits before you rent or buy any properties. You get overall control.</p>
-        </div>
-      </section>
-    </main>
-
-    <section class="house">
-      <h3>Based on your Location</h3>
-      <p>same of our picked properties near your Location</p>
-      <div class="rent">
-        <nav>
-          <a href="#">⁖ Rent</a>
-          <a href="#">$ Buy</a>
-          <a href="#">£ Sell</a>
-        </nav>
-        <div class="search">
-        <input type="text" class="search-box2"placeholder="search....">
-      </div>
-      </div>
-      </section>
-
-      <section class="sell-house">
-        <div class="rent-house">
-        <img src="image1.jpg" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="rent-house">
-      <img src="image2.jpg" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rent-house">
-      <img src="image3.webp" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rent-house">
-      <img src="image4.jpg" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rent-house">
-      <img src="image5.jpeg" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="rent-house">
-      <img src="image6.webp" alt="house">
-        <h3>✨ POPULAR</h3>
-        <div class="price">
-          <h2>$2,095</h2>
-          <p>/month</p>
-          <h2>Plam Harbor</h2>
-          <p class="bottom">2699 Green Valley, Highland Lake, FL</p>
-          <div class="House-service">
-            <p>🛏️ 3 Beds 🏚️ 2 Bathrooms ※ 5.7 mm</p>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
-    </html>
-    </body>
+
+     <section class="location-section">
+    <h2>Based on your location</h2>
+    <p>Some of our picked properties near you location.</p>
+
+    <div class="controls">
+        <div class="tabs">
+            <button class="tab active">
+                <span>🔍</span> Rent
+            </button>
+            <button class="tab">
+                <span>🏠</span> Buy
+            </button>
+            <button class="tab">
+                <span>🔔</span> Sell
+            </button>
+        </div>
+
+        <div class="search-box">
+            <span class="search-icon">🔎</span>
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+</section>
+
+<section class="service">
+  <div class="services">
+    <img src="./images/house-8.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+   <div class="services">
+    <img src="./images/house-7.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+   <div class="services">
+    <img src="./images/house-3.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+   <div class="services">
+    <img src="./images/house-4.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+   <div class="services">
+    <img src="./images/house-5.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+   <div class="services">
+    <img src="./images/house-6.jpg" class="house-img">
+
+    <div class="badge">POPULAR</div>
+
+    <div class="info">
+        <h2 class="price">$2,095 <span>/month</span></h2>
+        <h3 class="title">Palm Harbor</h3>
+        <p class="address">2699 Green Valley, Highland Lake, FL</p>
+
+        <div class="details">
+            <span>🛏 3 Beds</span>
+            <span>🛁 2 Bathrooms</span>
+            <span>📐 5×7 m²</span>
+        </div>
+    </div>
+
+    <div class="heart">♡</div>
+</div>
+  </div>
+
+  
+</section>
+   </main>
+ </body>
+ </html>
